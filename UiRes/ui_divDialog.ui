@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>681</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,3,5,1">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>140</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>140</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>用户信息</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>姓名：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditName">
+          <property name="placeholderText">
+           <string>请输入姓名</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>性别：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButtonMan">
+          <property name="text">
+           <string>男</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButtonWoman">
+          <property name="text">
+           <string>女</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>出生日期：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEditBirthday">
+          <property name="displayFormat">
+           <string>yyyy/MM/dd</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>占事：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="2">
+         <widget class="QPlainTextEdit" name="plainTextEditWhat">
+          <property name="plainText">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>170</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>170</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>起卦方式</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tabNumber">
+         <attribute name="title">
+          <string>数字卦</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>第一个数字：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>第三个数字：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>第二个数字：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEdit_num2"/>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="lineEdit_num3"/>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="lineEdit_num1"/>
+            </item>
+            <item row="1" column="2">
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabMoney">
+         <attribute name="title">
+          <string>铜钱卦</string>
+         </attribute>
+         <widget class="QWidget" name="widget" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>637</width>
+            <height>107</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0" rowspan="2">
+            <widget class="QLabel" name="labelMoney1">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../rc.qrc">:/images/images/qltb.gif</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" rowspan="2">
+            <widget class="QLabel" name="labelMoney2">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../rc.qrc">:/images/images/qltb.gif</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" rowspan="2">
+            <widget class="QLabel" name="labelMoney3">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../rc.qrc">:/images/images/qltb.gif</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3" rowspan="2">
+            <widget class="QPlainTextEdit" name="plainTextEdit">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="plainText">
+              <string>请点击旁边“第一次”按钮，一共需要6次</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QPushButton" name="pushButton">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>第0/6次</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>重新开始</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tabTime">
+         <attribute name="title">
+          <string>时间卦</string>
+         </attribute>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>641</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>2021年10月31日 13：24</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string> 八月廿六</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" rowspan="2">
+            <widget class="QLabel" name="label_10">
+             <property name="font">
+              <font>
+               <pointsize>21</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>辛丑年 辰时</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>宜：搬家 结婚 领证 安床 订婚 上梁 入学 求嗣 修坟 赴任 祈福 求医 纳采 立券</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>忌：装修 开业 开工 动土 出行 安葬 开张 旅游 破土 放水 求财 修造 置产 纳畜</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tabCustom">
+         <attribute name="title">
+          <string>手工起卦</string>
+         </attribute>
+         <widget class="QWidget" name="widget_4" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>421</width>
+            <height>102</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>第六爻</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_yao6">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>少阴 - -</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>少阳 —</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阳 — O</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阴 - - X</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>第三爻</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_yao3">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>少阴 - -</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>少阳 —</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阳 — O</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阴 - - X</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>第五爻</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_yao5">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>少阴 - -</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>少阳 —</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阳 — O</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阴 - - X</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>第二爻</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_yao2">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>少阴 - -</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>少阳 —</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阳 — O</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阴 - - X</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>第四爻</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_yao4">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>少阴 - -</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>少阳 —</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阳 — O</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阴 - - X</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>第一爻</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_yao1">
+               <property name="minimumSize">
+                <size>
+                 <width>150</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <item>
+                <property name="text">
+                 <string>少阴 - -</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>少阳 —</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阳 — O</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>老阴 - - X</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tabComputer">
+         <attribute name="title">
+          <string>电脑自动</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textEditTips">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;h3 style=&quot; margin-top:5px; margin-bottom:5px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28px; background-color:#f8eacf;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:large; font-weight:700; color:#804627; background-color:#f8eacf;&quot;&gt;周易占卜简介：&lt;/span&gt;&lt;/h3&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:12px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:28px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:medium; color:#000000; background-color:#fefaef;&quot;&gt;《易经》是一本最古老的书，被称为“群经之首”、“文化之源”。不过，现代人听到《易经》所想到的可能是：它可以用来算命吗？没错，《易经》确实敎人如何占卦，但是占卦不等于算命；并且，除了占卦之外，《易经》还谈做人处世的道理。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:12px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:medium; color:#000000; background-color:#fefaef;&quot;&gt;《易经》占卦须知&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:medium; color:#000000;&quot;&gt;&lt;br /&gt;1.人生有无数的抉择，造成吉凶悔吝。如何抉择可保平安？可以趋吉避凶？《易经》提醒人要注意：德行（因为欲望会造成盲点与执著）；能力（有能力就有自信）；以及智慧（充分运用理性的力量，加上生活经验的配合）。&lt;br /&gt;2.在“智慧”方面，占卦可以提供协助。所谓的“无有师保，如临父母”，以及“人谋鬼谋，百姓与能”（系辞下）。&lt;br /&gt;3.在理性及经验皆无法明确论断时，可以进行占卦。首先，要遵守“三不占”原则：&lt;br /&gt;①不诚不占：此乃求教于神明，首重真诚。&lt;br /&gt;②不义不占：不合乎正当性及合理性的问题，不必占问。&lt;br /&gt;③不疑不占：必须是理性难以测度之事。&lt;br /&gt;4.提问方法：&lt;br /&gt;①每次一个问题，问题是：现在有一选择，一旦决定则后果如何？譬如小孩可选两个学校，则须分占二次，看其结果何者为宜。或者，欲购某屋，占其是否可行？当然，亦可占个人之时运、经商、婚姻、事业、健康、子嗣等。&lt;br /&gt;②同一问题，可以换不同方式来占。一旦有了结果，则须过三个月（一季）再占。&lt;br /&gt;5.占卦最好在清晨，心思清净，意念集中。先拟好问题，准备纸笔。拿出筹策，握于手中，心中默念：“假尔泰筮有常，某（自己名字）今以某事，未知可否。爰质所疑于神之灵，吉凶、得失、悔吝、忧虞，唯尔有神，尚明告之。”&lt;br /&gt;6.然后依占卦步骤，仔细进行。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:medium; color:#000000; background-color:#fefaef;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:medium; font-weight:700; color:#000000;&quot;&gt;周易预测摇卦方法&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:14px; color:#000000;&quot;&gt;&lt;br /&gt;按照古籍《易经》的铜币起卦方法如下：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:14px; color:#000000; background-color:#fefaef;&quot;&gt;一、双手合十，将三枚铜钱（或铜币）合于掌心。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:14px; color:#000000; background-color:#fefaef;&quot;&gt;二、集中意念，心里想着需要预测的事，心念要专一，一般一件事起一卦，不要同时想着几件事，这样就起卦不准了。集中意念，使手心铜钱的磁场与人体磁场相通，双手合十时间约一分钟。（注：古代起卦礼节颇多，还需沐浴更衣，焚香，静心等，这些在一般起卦时就简略了，只是在预测重大事项时，依古方起卦，准确度更高）&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:14px; color:#000000; background-color:#fefaef;&quot;&gt;三、双手合十，掌心略留空间，使得铜钱能够在双手掌心转动为佳，双手摇动几次后，松开，让铜钱落在桌面，看三个铜钱中，共有几个是“背面”：一个背面记作“、”，两个背面记作“、、”，三个背面记作：“o”,如果三个都是正面，则记作“x”,这样，一卦的一爻便形成了。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:14px; color:#000000;&quot;&gt;&lt;br /&gt;四、照上面方法共摇六次，从下向上分别记录每一次（也就是每一爻）的结果，一个完整的卦（共六爻）就形成了，可以用于预测了。例如摇了六次，记录如下：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:14px; color:#000000; background-color:#fefaef;&quot;&gt;第六次（一个背面） 结果“、”&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:14px; color:#000000;&quot;&gt;&lt;br /&gt;第五次（一个背面） 结果“、”&lt;br /&gt;第四次（两个背面） 结果“、、”&lt;br /&gt;第三次（三个背面） 结果“o”&lt;br /&gt;第二次（三个正面） 结果“x”&lt;br /&gt;第一次（一个背面） 结果“、”&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#fefaef;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft Yahei','Arial','Helvetica','sans-serif','瀹嬩綋'; font-size:14px; color:#000000;&quot;&gt;&lt;br /&gt;这就是完整的一卦，方法并不难，难就难在心念专一、一事一卦，当然还有解卦的准确性了。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>460</width>
+          <height>19</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonOK">
+        <property name="text">
+         <string>查看结果</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonCancel">
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditName</tabstop>
+  <tabstop>radioButtonMan</tabstop>
+  <tabstop>radioButtonWoman</tabstop>
+  <tabstop>dateEditBirthday</tabstop>
+  <tabstop>plainTextEditWhat</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>lineEdit_num1</tabstop>
+  <tabstop>lineEdit_num2</tabstop>
+  <tabstop>lineEdit_num3</tabstop>
+  <tabstop>pushButtonOK</tabstop>
+  <tabstop>pushButtonCancel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

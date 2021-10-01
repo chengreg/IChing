@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>images/new.png</file>
+    <file>images/cx.png</file>
+    <file>images/cz.png</file>
+    <file>images/del.png</file>
+    <file>images/pasle.png</file>
+    <file>images/copy.png</file>
+    <file>images/cut.png</file>
+    <file>images/help.png</file>
+    <file>images/hidepwd.png</file>
+    <file>images/newuser.png</file>
+    <file>images/open.png</file>
+    <file>images/print.png</file>
+    <file>images/save.png</file>
+    <file>images/search.png</file>
+    <file>images/showpwd.png</file>
+    <file>images/shuaxing.png</file>
+    <file>images/study.png</file>
+    <file>images/tools.png</file>
+    <file>images/users.png</file>
+  </qresource>
+  <qresource prefix="images">
+    <file>images/qltb.gif</file>
+  </qresource>
+</RCC>
