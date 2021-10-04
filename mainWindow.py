@@ -8,6 +8,7 @@
 from PySide6.QtWidgets import QMainWindow, QMdiArea
 from UiRes.ui_main import Ui_MainWindow
 from numberDialog import NumberDialog
+from numberTo64 import NumberTo64
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
@@ -21,14 +22,23 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.initGui()
 
-    def acceptDivDialogSignal(self, dict):
+    def acceptDivDialogSignal(self, dataDict):
         print("从占卦界面获得的数据：",dict)
+
 
         from contentAera import ContentAearWindow
         cAera = ContentAearWindow()
-        cAera.setWindowTitle(dict["name"])
-        cAera.textBrowser.append(f"姓名：{dict['name']} ")
-        cAera.textBrowser.insertPlainText(f"性别：{dict['sex']} /n")
+
+        cAera.setWindowTitle(dataDict["name"])
+        cAera.textBrowser.append(f"姓名：{dataDict['name']} \n")
+        cAera.textBrowser.insertPlainText(f"性别：{dataDict['sex']} \n")
+        cAera.textBrowser.insertPlainText(f"出生日期：{dataDict['birthday']} \n")
+        cAera.textBrowser.insertPlainText(f"占事：{dataDict['what']} \n")
+
+        result = NumberTo64(dataDict["num1"], dataDict["num2"], dataDict["num3"]).result()
+        print(result)
+        cAera.textBrowser.insertPlainText(f"第{str(result['卦序'])}卦  {result['卦名']} \n")
+
         self.mdiArea.addSubWindow(cAera)
 
         cAera.show()
