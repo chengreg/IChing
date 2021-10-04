@@ -136,7 +136,18 @@
     </property>
     <addaction name="actionmysql"/>
    </widget>
+   <widget class="QMenu" name="menuzhangua">
+    <property name="title">
+     <string>占卦(&amp;G)</string>
+    </property>
+    <addaction name="actionNum"/>
+    <addaction name="actionMoney"/>
+    <addaction name="actionTime"/>
+    <addaction name="actionCostom"/>
+    <addaction name="actionCompter"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuzhangua"/>
    <addaction name="menuEdit"/>
    <addaction name="menuwi"/>
    <addaction name="menu_V"/>
@@ -148,6 +159,9 @@
    <property name="windowTitle">
     <string>toolBar</string>
    </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
@@ -156,12 +170,21 @@
    </attribute>
    <addaction name="actionNew"/>
    <addaction name="actionOpen"/>
+   <addaction name="actiond"/>
    <addaction name="actionSave"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actiond_3"/>
+   <addaction name="actiond_5"/>
+   <addaction name="actiononline"/>
+   <addaction name="actiond_2"/>
    <addaction name="separator"/>
   </widget>
-  <widget class="QToolBar" name="toolBar_2">
+  <widget class="QToolBar" name="toolBar_zhangua">
    <property name="windowTitle">
     <string>toolBar_2</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -169,19 +192,24 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actiond"/>
-   <addaction name="actiond_2"/>
-   <addaction name="actionCopy"/>
-   <addaction name="actiond_3"/>
-   <addaction name="actiond_5"/>
-   <addaction name="actiononline"/>
+   <addaction name="actionNum"/>
+   <addaction name="actionMoney"/>
+   <addaction name="actionTime"/>
+   <addaction name="actionCostom"/>
+   <addaction name="actionCompter"/>
   </widget>
-  <widget class="QDockWidget" name="dockWidget_6">
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="floating">
+    <bool>false</bool>
+   </property>
    <property name="features">
     <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
    </property>
    <property name="allowedAreas">
     <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>占卦记录</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>1</number>
@@ -235,7 +263,7 @@
   </widget>
   <action name="actionNew">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/new.png</normaloff>:/icon/images/new.png</iconset>
    </property>
    <property name="text">
@@ -247,7 +275,7 @@
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/open.png</normaloff>:/icon/images/open.png</iconset>
    </property>
    <property name="text">
@@ -264,7 +292,7 @@
   </action>
   <action name="actionSave">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/save.png</normaloff>:/icon/images/save.png</iconset>
    </property>
    <property name="text">
@@ -289,7 +317,7 @@
   </action>
   <action name="actionPrint">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/print.png</normaloff>:/icon/images/print.png</iconset>
    </property>
    <property name="text">
@@ -314,7 +342,7 @@
   </action>
   <action name="actiond">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/cx.png</normaloff>:/icon/images/cx.png</iconset>
    </property>
    <property name="text">
@@ -326,7 +354,7 @@
   </action>
   <action name="actiond_2">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/cz.png</normaloff>:/icon/images/cz.png</iconset>
    </property>
    <property name="text">
@@ -338,7 +366,7 @@
   </action>
   <action name="actionCopy">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/cut.png</normaloff>:/icon/images/cut.png</iconset>
    </property>
    <property name="text">
@@ -350,7 +378,7 @@
   </action>
   <action name="actiond_3">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/copy.png</normaloff>:/icon/images/copy.png</iconset>
    </property>
    <property name="text">
@@ -362,7 +390,7 @@
   </action>
   <action name="actiond_4">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/pasle.png</normaloff>:/icon/images/pasle.png</iconset>
    </property>
    <property name="text">
@@ -371,7 +399,7 @@
   </action>
   <action name="actiond_5">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/del.png</normaloff>:/icon/images/del.png</iconset>
    </property>
    <property name="text">
@@ -401,7 +429,7 @@
   </action>
   <action name="actiononline">
    <property name="icon">
-    <iconset resource="rc.qrc">
+    <iconset resource="res.qrc">
      <normaloff>:/icon/images/help.png</normaloff>:/icon/images/help.png</iconset>
    </property>
    <property name="text">
@@ -452,9 +480,54 @@
     <string>级联模式</string>
    </property>
   </action>
+  <action name="actionNum">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/number.png</normaloff>:/icon/images/number.png</iconset>
+   </property>
+   <property name="text">
+    <string>数字卦(&amp;N)</string>
+   </property>
+  </action>
+  <action name="actionMoney">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/money.png</normaloff>:/icon/images/money.png</iconset>
+   </property>
+   <property name="text">
+    <string>铜钱卦(&amp;M)</string>
+   </property>
+  </action>
+  <action name="actionTime">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/time.png</normaloff>:/icon/images/time.png</iconset>
+   </property>
+   <property name="text">
+    <string>时间卦(&amp;T)</string>
+   </property>
+  </action>
+  <action name="actionCostom">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/costom.png</normaloff>:/icon/images/costom.png</iconset>
+   </property>
+   <property name="text">
+    <string>手工起卦(&amp;C)</string>
+   </property>
+  </action>
+  <action name="actionCompter">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/images/computer.png</normaloff>:/icon/images/computer.png</iconset>
+   </property>
+   <property name="text">
+    <string>电脑自动(&amp;A)</string>
+   </property>
+  </action>
  </widget>
  <resources>
-  <include location="rc.qrc"/>
+  <include location="res.qrc"/>
  </resources>
  <connections/>
 </ui>

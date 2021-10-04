@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>685</width>
-    <height>681</height>
+    <width>690</width>
+    <height>687</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -84,6 +84,16 @@
         </item>
         <item>
          <widget class="QDateEdit" name="dateEditBirthday">
+          <property name="dateTime">
+           <datetime>
+            <hour>0</hour>
+            <minute>0</minute>
+            <second>0</second>
+            <year>1998</year>
+            <month>1</month>
+            <day>1</day>
+           </datetime>
+          </property>
           <property name="displayFormat">
            <string>yyyy/MM/dd</string>
           </property>
@@ -149,7 +159,7 @@
       <item>
        <widget class="QTabWidget" name="tabWidget">
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="tabNumber">
          <attribute name="title">
@@ -180,26 +190,92 @@
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QLineEdit" name="lineEdit_num2"/>
+             <widget class="QLineEdit" name="lineEdit_num2">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="maxLength">
+               <number>3</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>100~999</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
             <item row="2" column="1">
-             <widget class="QLineEdit" name="lineEdit_num3"/>
+             <widget class="QLineEdit" name="lineEdit_num3">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="maxLength">
+               <number>3</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>100~999</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QLineEdit" name="lineEdit_num1"/>
+             <widget class="QLineEdit" name="lineEdit_num1">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="maxLength">
+               <number>3</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>100~999</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="label_19">
+              <property name="text">
+               <string>下卦</string>
+              </property>
+             </widget>
             </item>
             <item row="1" column="2">
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
+             <widget class="QLabel" name="label_20">
+              <property name="text">
+               <string>上卦</string>
               </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QLabel" name="label_21">
+              <property name="text">
+               <string>爻位</string>
               </property>
-             </spacer>
+             </widget>
             </item>
            </layout>
           </item>
@@ -228,7 +304,7 @@
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="../rc.qrc">:/images/images/qltb.gif</pixmap>
+              <pixmap resource="res.qrc">:/icon/images/qltb.gif</pixmap>
              </property>
             </widget>
            </item>
@@ -238,7 +314,7 @@
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="../rc.qrc">:/images/images/qltb.gif</pixmap>
+              <pixmap resource="res.qrc">:/icon/images/qltb.gif</pixmap>
              </property>
             </widget>
            </item>
@@ -248,7 +324,7 @@
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap resource="../rc.qrc">:/images/images/qltb.gif</pixmap>
+              <pixmap resource="res.qrc">:/icon/images/qltb.gif</pixmap>
              </property>
             </widget>
            </item>
@@ -708,7 +784,24 @@ p, li { white-space: pre-wrap; }
   <tabstop>pushButtonCancel</tabstop>
  </tabstops>
  <resources>
-  <include location="../rc.qrc"/>
+  <include location="res.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButtonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>634</x>
+     <y>657</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

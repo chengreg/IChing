@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_divDialog.ui'
+## Form generated from reading UI file 'ui_NumberDialog.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.1.3
 ##
@@ -18,7 +18,7 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         if not Dialog.objectName():
             Dialog.setObjectName(u"Dialog")
-        Dialog.resize(690, 687)
+        Dialog.resize(690, 738)
         self.verticalLayout_2 = QVBoxLayout(Dialog)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.groupBox = QGroupBox(Dialog)
@@ -48,6 +48,7 @@ class Ui_Dialog(object):
 
         self.radioButtonMan = QRadioButton(self.groupBox)
         self.radioButtonMan.setObjectName(u"radioButtonMan")
+        self.radioButtonMan.setChecked(True)
 
         self.horizontalLayout.addWidget(self.radioButtonMan)
 
@@ -94,37 +95,30 @@ class Ui_Dialog(object):
 
         self.groupBox_2 = QGroupBox(Dialog)
         self.groupBox_2.setObjectName(u"groupBox_2")
-        self.groupBox_2.setMinimumSize(QSize(0, 170))
-        self.groupBox_2.setMaximumSize(QSize(16777215, 170))
+        self.groupBox_2.setMinimumSize(QSize(0, 150))
+        self.groupBox_2.setMaximumSize(QSize(16777215, 150))
         self.verticalLayout_3 = QVBoxLayout(self.groupBox_2)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.tabWidget = QTabWidget(self.groupBox_2)
-        self.tabWidget.setObjectName(u"tabWidget")
-        self.tabNumber = QWidget()
-        self.tabNumber.setObjectName(u"tabNumber")
-        self.verticalLayout_4 = QVBoxLayout(self.tabNumber)
-        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.gridLayout_2 = QGridLayout()
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.label_5 = QLabel(self.tabNumber)
+        self.label_5 = QLabel(self.groupBox_2)
         self.label_5.setObjectName(u"label_5")
 
         self.gridLayout_2.addWidget(self.label_5, 0, 0, 1, 1)
 
-        self.label_7 = QLabel(self.tabNumber)
+        self.label_7 = QLabel(self.groupBox_2)
         self.label_7.setObjectName(u"label_7")
 
         self.gridLayout_2.addWidget(self.label_7, 2, 0, 1, 1)
 
-        self.label_6 = QLabel(self.tabNumber)
+        self.label_6 = QLabel(self.groupBox_2)
         self.label_6.setObjectName(u"label_6")
 
         self.gridLayout_2.addWidget(self.label_6, 1, 0, 1, 1)
 
-        self.lineEdit_num2 = QLineEdit(self.tabNumber)
+        self.lineEdit_num2 = QLineEdit(self.groupBox_2)
         self.lineEdit_num2.setObjectName(u"lineEdit_num2")
         font = QFont()
-        font.setFamilies([u"Tahoma"])
         font.setPointSize(12)
         font.setBold(True)
         self.lineEdit_num2.setFont(font)
@@ -134,10 +128,9 @@ class Ui_Dialog(object):
 
         self.gridLayout_2.addWidget(self.lineEdit_num2, 1, 1, 1, 1)
 
-        self.lineEdit_num3 = QLineEdit(self.tabNumber)
+        self.lineEdit_num3 = QLineEdit(self.groupBox_2)
         self.lineEdit_num3.setObjectName(u"lineEdit_num3")
         font1 = QFont()
-        font1.setFamilies([u"Tahoma"])
         font1.setPointSize(12)
         font1.setBold(True)
         font1.setItalic(False)
@@ -148,7 +141,7 @@ class Ui_Dialog(object):
 
         self.gridLayout_2.addWidget(self.lineEdit_num3, 2, 1, 1, 1)
 
-        self.lineEdit_num1 = QLineEdit(self.tabNumber)
+        self.lineEdit_num1 = QLineEdit(self.groupBox_2)
         self.lineEdit_num1.setObjectName(u"lineEdit_num1")
         self.lineEdit_num1.setFont(font)
         self.lineEdit_num1.setMaxLength(3)
@@ -157,227 +150,23 @@ class Ui_Dialog(object):
 
         self.gridLayout_2.addWidget(self.lineEdit_num1, 0, 1, 1, 1)
 
-        self.label_19 = QLabel(self.tabNumber)
+        self.label_19 = QLabel(self.groupBox_2)
         self.label_19.setObjectName(u"label_19")
 
         self.gridLayout_2.addWidget(self.label_19, 0, 2, 1, 1)
 
-        self.label_20 = QLabel(self.tabNumber)
+        self.label_20 = QLabel(self.groupBox_2)
         self.label_20.setObjectName(u"label_20")
 
         self.gridLayout_2.addWidget(self.label_20, 1, 2, 1, 1)
 
-        self.label_21 = QLabel(self.tabNumber)
+        self.label_21 = QLabel(self.groupBox_2)
         self.label_21.setObjectName(u"label_21")
 
         self.gridLayout_2.addWidget(self.label_21, 2, 2, 1, 1)
 
 
-        self.verticalLayout_4.addLayout(self.gridLayout_2)
-
-        self.tabWidget.addTab(self.tabNumber, "")
-        self.tabMoney = QWidget()
-        self.tabMoney.setObjectName(u"tabMoney")
-        self.widget = QWidget(self.tabMoney)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(0, 0, 637, 107))
-        self.widget.setStyleSheet(u"")
-        self.gridLayout_3 = QGridLayout(self.widget)
-        self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.labelMoney1 = QLabel(self.widget)
-        self.labelMoney1.setObjectName(u"labelMoney1")
-        self.labelMoney1.setPixmap(QPixmap(u":/icon/images/qltb.gif"))
-
-        self.gridLayout_3.addWidget(self.labelMoney1, 0, 0, 2, 1)
-
-        self.labelMoney2 = QLabel(self.widget)
-        self.labelMoney2.setObjectName(u"labelMoney2")
-        self.labelMoney2.setPixmap(QPixmap(u":/icon/images/qltb.gif"))
-
-        self.gridLayout_3.addWidget(self.labelMoney2, 0, 1, 2, 1)
-
-        self.labelMoney3 = QLabel(self.widget)
-        self.labelMoney3.setObjectName(u"labelMoney3")
-        self.labelMoney3.setPixmap(QPixmap(u":/icon/images/qltb.gif"))
-
-        self.gridLayout_3.addWidget(self.labelMoney3, 0, 2, 2, 1)
-
-        self.plainTextEdit = QPlainTextEdit(self.widget)
-        self.plainTextEdit.setObjectName(u"plainTextEdit")
-        self.plainTextEdit.setReadOnly(True)
-
-        self.gridLayout_3.addWidget(self.plainTextEdit, 0, 3, 2, 1)
-
-        self.pushButton = QPushButton(self.widget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setMinimumSize(QSize(0, 40))
-        self.pushButton.setMaximumSize(QSize(16777215, 40))
-
-        self.gridLayout_3.addWidget(self.pushButton, 0, 4, 1, 1)
-
-        self.pushButton_2 = QPushButton(self.widget)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setMinimumSize(QSize(0, 40))
-        self.pushButton_2.setMaximumSize(QSize(16777215, 40))
-
-        self.gridLayout_3.addWidget(self.pushButton_2, 1, 4, 1, 1)
-
-        self.tabWidget.addTab(self.tabMoney, "")
-        self.tabTime = QWidget()
-        self.tabTime.setObjectName(u"tabTime")
-        self.widget_3 = QWidget(self.tabTime)
-        self.widget_3.setObjectName(u"widget_3")
-        self.widget_3.setGeometry(QRect(0, 0, 641, 81))
-        self.gridLayout_4 = QGridLayout(self.widget_3)
-        self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.label_9 = QLabel(self.widget_3)
-        self.label_9.setObjectName(u"label_9")
-
-        self.gridLayout_4.addWidget(self.label_9, 0, 0, 1, 2)
-
-        self.label_13 = QLabel(self.widget_3)
-        self.label_13.setObjectName(u"label_13")
-
-        self.gridLayout_4.addWidget(self.label_13, 1, 0, 1, 1)
-
-        self.label_10 = QLabel(self.widget_3)
-        self.label_10.setObjectName(u"label_10")
-        font2 = QFont()
-        font2.setPointSize(21)
-        font2.setBold(True)
-        self.label_10.setFont(font2)
-
-        self.gridLayout_4.addWidget(self.label_10, 2, 0, 2, 1)
-
-        self.label_11 = QLabel(self.widget_3)
-        self.label_11.setObjectName(u"label_11")
-
-        self.gridLayout_4.addWidget(self.label_11, 2, 1, 1, 1)
-
-        self.label_12 = QLabel(self.widget_3)
-        self.label_12.setObjectName(u"label_12")
-
-        self.gridLayout_4.addWidget(self.label_12, 3, 1, 1, 1)
-
-        self.tabWidget.addTab(self.tabTime, "")
-        self.tabCustom = QWidget()
-        self.tabCustom.setObjectName(u"tabCustom")
-        self.widget_4 = QWidget(self.tabCustom)
-        self.widget_4.setObjectName(u"widget_4")
-        self.widget_4.setGeometry(QRect(0, 0, 421, 102))
-        self.verticalLayout_5 = QVBoxLayout(self.widget_4)
-        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.horizontalLayout_3 = QHBoxLayout()
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.label_8 = QLabel(self.widget_4)
-        self.label_8.setObjectName(u"label_8")
-
-        self.horizontalLayout_3.addWidget(self.label_8)
-
-        self.comboBox_yao6 = QComboBox(self.widget_4)
-        self.comboBox_yao6.addItem("")
-        self.comboBox_yao6.addItem("")
-        self.comboBox_yao6.addItem("")
-        self.comboBox_yao6.addItem("")
-        self.comboBox_yao6.setObjectName(u"comboBox_yao6")
-        self.comboBox_yao6.setMinimumSize(QSize(150, 0))
-
-        self.horizontalLayout_3.addWidget(self.comboBox_yao6)
-
-        self.label_16 = QLabel(self.widget_4)
-        self.label_16.setObjectName(u"label_16")
-
-        self.horizontalLayout_3.addWidget(self.label_16)
-
-        self.comboBox_yao3 = QComboBox(self.widget_4)
-        self.comboBox_yao3.addItem("")
-        self.comboBox_yao3.addItem("")
-        self.comboBox_yao3.addItem("")
-        self.comboBox_yao3.addItem("")
-        self.comboBox_yao3.setObjectName(u"comboBox_yao3")
-        self.comboBox_yao3.setMinimumSize(QSize(150, 0))
-
-        self.horizontalLayout_3.addWidget(self.comboBox_yao3)
-
-
-        self.verticalLayout_5.addLayout(self.horizontalLayout_3)
-
-        self.horizontalLayout_4 = QHBoxLayout()
-        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.label_14 = QLabel(self.widget_4)
-        self.label_14.setObjectName(u"label_14")
-
-        self.horizontalLayout_4.addWidget(self.label_14)
-
-        self.comboBox_yao5 = QComboBox(self.widget_4)
-        self.comboBox_yao5.addItem("")
-        self.comboBox_yao5.addItem("")
-        self.comboBox_yao5.addItem("")
-        self.comboBox_yao5.addItem("")
-        self.comboBox_yao5.setObjectName(u"comboBox_yao5")
-        self.comboBox_yao5.setMinimumSize(QSize(150, 0))
-
-        self.horizontalLayout_4.addWidget(self.comboBox_yao5)
-
-        self.label_17 = QLabel(self.widget_4)
-        self.label_17.setObjectName(u"label_17")
-
-        self.horizontalLayout_4.addWidget(self.label_17)
-
-        self.comboBox_yao2 = QComboBox(self.widget_4)
-        self.comboBox_yao2.addItem("")
-        self.comboBox_yao2.addItem("")
-        self.comboBox_yao2.addItem("")
-        self.comboBox_yao2.addItem("")
-        self.comboBox_yao2.setObjectName(u"comboBox_yao2")
-        self.comboBox_yao2.setMinimumSize(QSize(150, 0))
-
-        self.horizontalLayout_4.addWidget(self.comboBox_yao2)
-
-
-        self.verticalLayout_5.addLayout(self.horizontalLayout_4)
-
-        self.horizontalLayout_5 = QHBoxLayout()
-        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.label_15 = QLabel(self.widget_4)
-        self.label_15.setObjectName(u"label_15")
-
-        self.horizontalLayout_5.addWidget(self.label_15)
-
-        self.comboBox_yao4 = QComboBox(self.widget_4)
-        self.comboBox_yao4.addItem("")
-        self.comboBox_yao4.addItem("")
-        self.comboBox_yao4.addItem("")
-        self.comboBox_yao4.addItem("")
-        self.comboBox_yao4.setObjectName(u"comboBox_yao4")
-        self.comboBox_yao4.setMinimumSize(QSize(150, 0))
-
-        self.horizontalLayout_5.addWidget(self.comboBox_yao4)
-
-        self.label_18 = QLabel(self.widget_4)
-        self.label_18.setObjectName(u"label_18")
-
-        self.horizontalLayout_5.addWidget(self.label_18)
-
-        self.comboBox_yao1 = QComboBox(self.widget_4)
-        self.comboBox_yao1.addItem("")
-        self.comboBox_yao1.addItem("")
-        self.comboBox_yao1.addItem("")
-        self.comboBox_yao1.addItem("")
-        self.comboBox_yao1.setObjectName(u"comboBox_yao1")
-        self.comboBox_yao1.setMinimumSize(QSize(150, 0))
-
-        self.horizontalLayout_5.addWidget(self.comboBox_yao1)
-
-
-        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
-
-        self.tabWidget.addTab(self.tabCustom, "")
-        self.tabComputer = QWidget()
-        self.tabComputer.setObjectName(u"tabComputer")
-        self.tabWidget.addTab(self.tabComputer, "")
-
-        self.verticalLayout_3.addWidget(self.tabWidget)
+        self.verticalLayout_3.addLayout(self.gridLayout_2)
 
 
         self.verticalLayout_2.addWidget(self.groupBox_2)
@@ -419,8 +208,7 @@ class Ui_Dialog(object):
         QWidget.setTabOrder(self.radioButtonMan, self.radioButtonWoman)
         QWidget.setTabOrder(self.radioButtonWoman, self.dateEditBirthday)
         QWidget.setTabOrder(self.dateEditBirthday, self.plainTextEditWhat)
-        QWidget.setTabOrder(self.plainTextEditWhat, self.tabWidget)
-        QWidget.setTabOrder(self.tabWidget, self.lineEdit_num1)
+        QWidget.setTabOrder(self.plainTextEditWhat, self.lineEdit_num1)
         QWidget.setTabOrder(self.lineEdit_num1, self.lineEdit_num2)
         QWidget.setTabOrder(self.lineEdit_num2, self.lineEdit_num3)
         QWidget.setTabOrder(self.lineEdit_num3, self.pushButtonOK)
@@ -428,9 +216,6 @@ class Ui_Dialog(object):
 
         self.retranslateUi(Dialog)
         self.pushButtonCancel.clicked.connect(Dialog.close)
-
-        self.tabWidget.setCurrentIndex(0)
-
 
         QMetaObject.connectSlotsByName(Dialog)
     # setupUi
@@ -448,7 +233,7 @@ class Ui_Dialog(object):
         self.label_4.setText(QCoreApplication.translate("Dialog", u"\u5360\u4e8b\uff1a", None))
         self.plainTextEditWhat.setPlainText("")
         self.plainTextEditWhat.setPlaceholderText("")
-        self.groupBox_2.setTitle(QCoreApplication.translate("Dialog", u"\u8d77\u5366\u65b9\u5f0f", None))
+        self.groupBox_2.setTitle(QCoreApplication.translate("Dialog", u"\u6570\u5b57\u5366", None))
         self.label_5.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u4e00\u4e2a\u6570\u5b57\uff1a", None))
         self.label_7.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u4e09\u4e2a\u6570\u5b57\uff1a", None))
         self.label_6.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u4e8c\u4e2a\u6570\u5b57\uff1a", None))
@@ -458,58 +243,6 @@ class Ui_Dialog(object):
         self.label_19.setText(QCoreApplication.translate("Dialog", u"\u4e0b\u5366", None))
         self.label_20.setText(QCoreApplication.translate("Dialog", u"\u4e0a\u5366", None))
         self.label_21.setText(QCoreApplication.translate("Dialog", u"\u723b\u4f4d", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabNumber), QCoreApplication.translate("Dialog", u"\u6570\u5b57\u5366", None))
-        self.labelMoney1.setText("")
-        self.labelMoney2.setText("")
-        self.labelMoney3.setText("")
-        self.plainTextEdit.setPlainText(QCoreApplication.translate("Dialog", u"\u8bf7\u70b9\u51fb\u65c1\u8fb9\u201c\u7b2c\u4e00\u6b21\u201d\u6309\u94ae\uff0c\u4e00\u5171\u9700\u89816\u6b21", None))
-        self.pushButton.setText(QCoreApplication.translate("Dialog", u"\u7b2c0/6\u6b21", None))
-        self.pushButton_2.setText(QCoreApplication.translate("Dialog", u"\u91cd\u65b0\u5f00\u59cb", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabMoney), QCoreApplication.translate("Dialog", u"\u94dc\u94b1\u5366", None))
-        self.label_9.setText(QCoreApplication.translate("Dialog", u"2021\u5e7410\u670831\u65e5 13\uff1a24", None))
-        self.label_13.setText(QCoreApplication.translate("Dialog", u" \u516b\u6708\u5eff\u516d", None))
-        self.label_10.setText(QCoreApplication.translate("Dialog", u"\u8f9b\u4e11\u5e74 \u8fb0\u65f6", None))
-        self.label_11.setText(QCoreApplication.translate("Dialog", u"\u5b9c\uff1a\u642c\u5bb6 \u7ed3\u5a5a \u9886\u8bc1 \u5b89\u5e8a \u8ba2\u5a5a \u4e0a\u6881 \u5165\u5b66 \u6c42\u55e3 \u4fee\u575f \u8d74\u4efb \u7948\u798f \u6c42\u533b \u7eb3\u91c7 \u7acb\u5238", None))
-        self.label_12.setText(QCoreApplication.translate("Dialog", u"\u5fcc\uff1a\u88c5\u4fee \u5f00\u4e1a \u5f00\u5de5 \u52a8\u571f \u51fa\u884c \u5b89\u846c \u5f00\u5f20 \u65c5\u6e38 \u7834\u571f \u653e\u6c34 \u6c42\u8d22 \u4fee\u9020 \u7f6e\u4ea7 \u7eb3\u755c", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabTime), QCoreApplication.translate("Dialog", u"\u65f6\u95f4\u5366", None))
-        self.label_8.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u516d\u723b", None))
-        self.comboBox_yao6.setItemText(0, QCoreApplication.translate("Dialog", u"\u5c11\u9634 - -", None))
-        self.comboBox_yao6.setItemText(1, QCoreApplication.translate("Dialog", u"\u5c11\u9633 \u2014", None))
-        self.comboBox_yao6.setItemText(2, QCoreApplication.translate("Dialog", u"\u8001\u9633 \u2014 O", None))
-        self.comboBox_yao6.setItemText(3, QCoreApplication.translate("Dialog", u"\u8001\u9634 - - X", None))
-
-        self.label_16.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u4e09\u723b", None))
-        self.comboBox_yao3.setItemText(0, QCoreApplication.translate("Dialog", u"\u5c11\u9634 - -", None))
-        self.comboBox_yao3.setItemText(1, QCoreApplication.translate("Dialog", u"\u5c11\u9633 \u2014", None))
-        self.comboBox_yao3.setItemText(2, QCoreApplication.translate("Dialog", u"\u8001\u9633 \u2014 O", None))
-        self.comboBox_yao3.setItemText(3, QCoreApplication.translate("Dialog", u"\u8001\u9634 - - X", None))
-
-        self.label_14.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u4e94\u723b", None))
-        self.comboBox_yao5.setItemText(0, QCoreApplication.translate("Dialog", u"\u5c11\u9634 - -", None))
-        self.comboBox_yao5.setItemText(1, QCoreApplication.translate("Dialog", u"\u5c11\u9633 \u2014", None))
-        self.comboBox_yao5.setItemText(2, QCoreApplication.translate("Dialog", u"\u8001\u9633 \u2014 O", None))
-        self.comboBox_yao5.setItemText(3, QCoreApplication.translate("Dialog", u"\u8001\u9634 - - X", None))
-
-        self.label_17.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u4e8c\u723b", None))
-        self.comboBox_yao2.setItemText(0, QCoreApplication.translate("Dialog", u"\u5c11\u9634 - -", None))
-        self.comboBox_yao2.setItemText(1, QCoreApplication.translate("Dialog", u"\u5c11\u9633 \u2014", None))
-        self.comboBox_yao2.setItemText(2, QCoreApplication.translate("Dialog", u"\u8001\u9633 \u2014 O", None))
-        self.comboBox_yao2.setItemText(3, QCoreApplication.translate("Dialog", u"\u8001\u9634 - - X", None))
-
-        self.label_15.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u56db\u723b", None))
-        self.comboBox_yao4.setItemText(0, QCoreApplication.translate("Dialog", u"\u5c11\u9634 - -", None))
-        self.comboBox_yao4.setItemText(1, QCoreApplication.translate("Dialog", u"\u5c11\u9633 \u2014", None))
-        self.comboBox_yao4.setItemText(2, QCoreApplication.translate("Dialog", u"\u8001\u9633 \u2014 O", None))
-        self.comboBox_yao4.setItemText(3, QCoreApplication.translate("Dialog", u"\u8001\u9634 - - X", None))
-
-        self.label_18.setText(QCoreApplication.translate("Dialog", u"\u7b2c\u4e00\u723b", None))
-        self.comboBox_yao1.setItemText(0, QCoreApplication.translate("Dialog", u"\u5c11\u9634 - -", None))
-        self.comboBox_yao1.setItemText(1, QCoreApplication.translate("Dialog", u"\u5c11\u9633 \u2014", None))
-        self.comboBox_yao1.setItemText(2, QCoreApplication.translate("Dialog", u"\u8001\u9633 \u2014 O", None))
-        self.comboBox_yao1.setItemText(3, QCoreApplication.translate("Dialog", u"\u8001\u9634 - - X", None))
-
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabCustom), QCoreApplication.translate("Dialog", u"\u624b\u5de5\u8d77\u5366", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabComputer), QCoreApplication.translate("Dialog", u"\u7535\u8111\u81ea\u52a8", None))
         self.textEditTips.setHtml(QCoreApplication.translate("Dialog", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

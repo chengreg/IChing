@@ -17,20 +17,25 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(589, 449)
-        self.verticalLayout = QVBoxLayout(Form)
-        self.verticalLayout.setObjectName(u"verticalLayout")
+        Form.resize(770, 675)
+        self.verticalLayout_2 = QVBoxLayout(Form)
+        self.verticalLayout_2.setSpacing(0)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.widget = QWidget(Form)
         self.widget.setObjectName(u"widget")
-        self.verticalLayout_2 = QVBoxLayout(self.widget)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.textEdit = QTextEdit(self.widget)
-        self.textEdit.setObjectName(u"textEdit")
+        self.verticalLayout = QVBoxLayout(self.widget)
+        self.verticalLayout.setSpacing(0)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.textBrowser = QTextBrowser(self.widget)
+        self.textBrowser.setObjectName(u"textBrowser")
+        self.textBrowser.setStyleSheet(u"background-color: rgb(255, 255, 255);")
 
-        self.verticalLayout_2.addWidget(self.textEdit)
+        self.verticalLayout.addWidget(self.textBrowser)
 
 
-        self.verticalLayout.addWidget(self.widget)
+        self.verticalLayout_2.addWidget(self.widget)
 
 
         self.retranslateUi(Form)
